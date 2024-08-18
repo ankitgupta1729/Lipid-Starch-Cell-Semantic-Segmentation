@@ -1,0 +1,16 @@
+1.Data_Preprocessing/images/
+2.Models/RandomForest/images/
+2.Models/RandomForest/rf_model
+2.Models/RandomForest/RF_model.sav
+2.Models/RandomForest2/images/
+2.Models/RandomForest2/RF_model_CNN.sav
+2.Models/RandomForest2/RF_model_VGG16.sav
+2.Models/SegmentationModels/images/
+2.Models/UNet/data-science-bowl-2018/
+2.Models/UNet/images/
+2.Models/xgboost_vgg16/images/
+2.Models/xgboost_vgg16/model_XG.sav
+3.Data_Augmentation/images/
+images/
+logs/
+myenv/

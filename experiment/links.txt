@@ -1,0 +1,10 @@
+https://github.com/labelmeai/labelme/tree/main/examples/tutorial#convert-to-dataset
+
+There are 2 issues:
+
+1. Some images have cells in that very small part touches the boundary so should we have to consider it as partial cell 
+   or not. There are some edge detection algorithm from which we can find out whether it is a partial cell or not because
+   if edge pixel touches the boundary then it is cell otherwise not. Some opencv algorithm removes the border touching object too
+   if we don't remove partial cell then it becomes easy, not complex 
+
+2. if a cell contains starch then starch cell should be having both lables cell lable and starch label.  
