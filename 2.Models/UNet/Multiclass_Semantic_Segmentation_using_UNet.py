@@ -108,6 +108,8 @@ y_test_cat = test_masks_cat.reshape((y_test.shape[0], y_test.shape[1], y_test.sh
 class_weights = class_weight.compute_class_weight(class_weight='balanced',classes=np.unique(train_masks_reshaped_encoded),y=train_masks_reshaped_encoded)
 print("Class weights are...:", class_weights)
 
+# Class weights are...: [0.45496505 0.66286889 8.02337754 5.9241977 ]
+
 # class_weight={}
 # class_weight[0]=class_weights[0]
 # class_weight[1]=class_weights[1]
@@ -188,10 +190,11 @@ def iou_metric(y_true, y_pred):
 
 adam = optimizers.Adam(learning_rate=0.0001)
 
-
-#model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
-#model.compile(optimizer=adam, loss=[dice_loss],metrics=[dice_coef])
 model.compile(optimizer=Adam(learning_rate=0.0001), loss=FocalLoss(gamma=2.0, alpha=0.25),metrics=['accuracy'])
+#model.compile(optimizer=Adam(learning_rate=0.0001), loss='categorical_crossentropy', metrics=['accuracy'],sample_weight_mode="temporal")
+
+#model.compile(optimizer=Adam(learning_rate=0.00001), loss='categorical_crossentropy', metrics=['accuracy'])
+#model.compile(optimizer=adam, loss=[dice_loss],metrics=[dice_coef])
 #model.compile(optimizer=Adam(), loss=FocalLoss(gamma=2.0, alpha=0.25),metrics=[mean_iou])
 #model.compile(optimizer=Adam(), loss=FocalLoss(gamma=2.0, alpha=0.25),metrics=[dice_coef])
 #model.compile(optimizer=Adam(), loss=FocalLoss(gamma=2.0, alpha=0.25),metrics=[iou_metric])

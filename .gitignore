@@ -14,3 +14,14 @@
 images/
 logs/
 myenv/
+2.Models/Atttention_UNets/images/
+2.Models/Improved_UNet_with_Ensemble_Learning/images/
+2.Models/Improved_UNet_with_Ensemble_Learning/saved_models/
+2.Models/LinkNet/images/
+2.Models/LinkNet/linknet_res34_backbone_50epochs.hdf5
+2.Models/LinkNet/history_linknet.csv
+2.Models/UNet/test.hdf5
+2.Models/UNet/unet_50_epochs.hdf5
+2.Models/UNetCollections/images/
+2.Models/Unet_with_VGG_ResNet_Inception/images/
+2.Models/Unet_with_VGG_ResNet_Inception/saved_models/
